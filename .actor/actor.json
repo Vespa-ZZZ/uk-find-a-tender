@@ -1,0 +1,14 @@
+{
+    "actorSpecification": 1,
+    "name": "uk-find-a-tender",
+    "title": "UK Public Tenders Monitor (Find a Tender)",
+    "description": "Search and monitor UK public sector tenders, pipeline and award notices from the official Find a Tender OCDS API: keywords, CPV, region, value, open deadlines. Monitoring mode returns only new notices.",
+    "version": "1.0",
+    "buildTag": "latest",
+    "input": "./input_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "../Dockerfile",
+    "output": "./output_schema.json"
+}

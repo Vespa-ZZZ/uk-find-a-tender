@@ -1,0 +1,850 @@
+{
+ "uri": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-11-20T00:00:00&updatedTo=2026-11-20T12:00:00&limit=20&stages=tender",
+ "version": "1.1",
+ "extensions": [
+  "https://standard.open-contracting.org/profiles/eu/latest/en/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_amendment_rationale_classifications_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_completion_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_documentation_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_pagination_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_suitability_extension/master/extension.json",
+  "https://raw.githubusercontent.com/portaledcahn/ocds_Links_extension/main/extension.json",
+  "https://raw.githubusercontent.com/cabinetoffice/ocds_uk_extension/main/extension.json"
+ ],
+ "publishedDate": "2026-11-20T11:42:56Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "ocid": "ocds-h6vhtk-066dbe",
+   "id": "110085-2026",
+   "date": "2026-11-20T11:42:56Z",
+   "tag": [
+    "tender"
+   ],
+   "description": "The buyer is using PCS-Tender to conduct this ITT exercise. The Project code is 32380. For more information see: http://www.publiccontractsscotland.gov.uk/info/InfoCentre.aspx?ID=2343\nCommunity benefits are included in this requirement. For more information see: https://www.gov.scot/policies/public-sector-procurement/community-benefits-in-procurement/\nA summary of the expected community benefits has been provided as follows:\nThe Council has included within Buyer Attachments a Community Benefits Menu which sets out community benefits relevant to the Contract. In order to achieve any score under this section, Tenderers must offer a package of community benefits from the menu with a total aggregate number of community benefit points at least equal to the minimum number of points specified in the menu.\nFull detailed contained within the Tender Documents.\n(SC Ref:838045)",
+   "initiationType": "tender",
+   "tender": {
+    "id": "DGCC-00261",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "Independent Children's Advocacy Service",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "85310000",
+     "description": "Social work services"
+    },
+    "mainProcurementCategory": "services",
+    "description": "Dumfries and Galloway Council (the Purchaser) wishes to commission children's advocacy services that:\n- are independent and professional;\n- provide individual (one-to-one) advocacy that is issue focused; and\n- meet statutory requirements and Scottish Executive priorities.\nThe service will covers such services under the following categories:\n- Advocacy services for children and young people who are or have been looked after and accommodated within or outwith the region (excluding those who are placed locally by another Local Authority) up until the age of 26.\n- Advocacy for children and young people on the Child Protection Register.\n- Advocacy for children and young people in terms of the Mental Health (Care and Treatment) (Scotland) Act 2003.",
+    "lots": [
+     {
+      "id": "1",
+      "description": "This procurement is to obtain a suitable advocacy service provider for children's advocacy services. The service objectives are as follows:\nTo provide an independent and confidential advocacy service to include information, support and advice for Dumfries and Galloway children and young people who are or have been looked after and accommodated within or outwith the region.\nTo provide access to an advocacy service for children & young people regardless of age, gender, disability, sexual orientation, ethnic origin, faith/religion, or social background.\nTo match service users and advocates appropriate to each situation’s needs, seeking specialist support where indicated and ensuring service users comfort at all times.\nTo ensure that children & young people’s own views are heard and adequately represented.\nTo provide advocacy, related support and information in an age-appropriate and child/young person-centred manner.\nTo help children and young people to access and understand information relevant to them and make appropriate choices or decisions which give them fuller control of their lives.\nTo promote choices to young people.\nTo support children & young people who, because of incapacity or communication difficulties, may not be able to express their needs or views.\nTo provide advocacy for children and young people who have a mental disorder in compliance with the Mental Health Act.\nTo guide children and young people towards self-advocacy and avoid creation of dependency.\nTo develop links with service providers, professionals and relevant support organisations to ensure clear understanding of the role of advocacy.\nTo develop and promote children and young people’s involvement in service planning.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "80"
+        },
+        {
+         "type": "price",
+         "description": "20"
+        }
+       ]
+      },
+      "contractPeriod": {
+       "durationInDays": 1800
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "Initial period will be for 3 years with 2 optional extension periods of 12 months each, at the sole discretion of Dumfries and Galloway Council."
+      },
+      "submissionTerms": {
+       "variantPolicy": "notAllowed"
+      },
+      "hasOptions": true,
+      "options": {
+       "description": "Additional purchases may be made where external funding becomes available to widen offering where this aligns with initial specification requirements."
+      },
+      "status": "active"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "UKM92"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "submissionMethod": [
+     "electronicSubmission"
+    ],
+    "submissionMethodDetails": "https://www.publictendersscotland.publiccontractsscotland.gov.uk/esop/pts-host/public/pts/web/login.html",
+    "documents": [
+     {
+      "documentType": "economicSelectionCriteria",
+      "id": "economic"
+     },
+     {
+      "documentType": "technicalSelectionCriteria",
+      "id": "technical"
+     }
+    ],
+    "selectionCriteria": {
+     "criteria": [
+      {
+       "type": "technical",
+       "description": "Execution of the service is reserved to a particular profession"
+      }
+     ]
+    },
+    "otherRequirements": {
+     "requiresStaffNamesAndQualifications": true
+    },
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "coveredBy": [
+     "GPA"
+    ],
+    "tenderPeriod": {
+     "endDate": "2026-12-14T12:00:00Z"
+    },
+    "submissionTerms": {
+     "languages": [
+      "en"
+     ]
+    },
+    "awardPeriod": {
+     "startDate": "2026-12-21T12:00:00Z"
+    },
+    "bidOpening": {
+     "date": "2026-12-21T12:00:00Z"
+    },
+    "hasRecurrence": false,
+    "contractTerms": {
+     "hasElectronicOrdering": true,
+     "electronicInvoicingPolicy": "allowed",
+     "hasElectronicPayment": true
+    }
+   },
+   "parties": [
+    {
+     "name": "Dumfries and Galloway Council",
+     "id": "GB-FTS-1510",
+     "identifier": {
+      "legalName": "Dumfries and Galloway Council"
+     },
+     "address": {
+      "streetAddress": "Procurement Team, Carruthers House",
+      "locality": "Dumfries",
+      "region": "UKM92",
+      "postalCode": "DG1 2HP",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer",
+      "centralPurchasingBody"
+     ],
+     "details": {
+      "url": "http://www.dumgal.gov.uk",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA00219",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "REGIONAL_AUTHORITY",
+        "description": "Regional or local authority"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "01",
+        "description": "General public services"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-1510",
+    "name": "Dumfries and Galloway Council"
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000826940"
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-07c035",
+   "id": "110082-2026",
+   "date": "2026-11-20T11:40:42Z",
+   "tag": [
+    "tender"
+   ],
+   "description": "The buyer is using PCS-Tender to conduct this ITT exercise. The Project code is 33178. For more information see: http://www.publiccontractsscotland.gov.uk/info/InfoCentre.aspx?ID=2343\nThe Contracting Authority does not intend to include a sub-contract clause as part of community benefits (as per Section 25 of the Procurement Reform (Scotland) Act 2014) in this contract for the following reason:\nN/A\nCommunity benefits are included in this requirement. For more information see: https://www.gov.scot/policies/public-sector-procurement/community-benefits-in-procurement/\nA summary of the expected community benefits has been provided as follows:\nSuppliers to provide details of community benefits to be delivered during the tender period.\n(SC Ref:849047)",
+   "initiationType": "tender",
+   "tender": {
+    "id": "PKC14238",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "PKC14238  Central Heating Upgrade Phase 6",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "45331100",
+     "description": "Central-heating installation work"
+    },
+    "mainProcurementCategory": "works",
+    "description": "Perth & Kinross Council (‘the Council’) is seeking to appoint suitably qualified and experienced contractors to carry out central heating life cycle replacement works on PKC’s domestic tenanted properties.\nThe works comprise of the like-for-like replacement of gas boilers and radiators, full gas boiler systems inclusive of radiators and pipework; replacement of electric storage and panel heating systems, as well as the replacement of existing storage heating, electric wet boilers, and solid fuel heating with Air Source Heat Pumps. This list is not exhaustive. The full scope of works will be set out in the Employer’s Requirements within the tender documentation.",
+    "value": {
+     "amount": 4700000,
+     "currency": "GBP"
+    },
+    "lotDetails": {
+     "maximumLotsBidPerSupplier": 2,
+     "maximumLotsAwardedPerSupplier": 1
+    },
+    "lots": [
+     {
+      "id": "2",
+      "title": "Lot 2 City and South Area",
+      "description": "Perth & Kinross Council (‘the Council’) is seeking to appoint a suitably qualified and experienced contractors to carry out central heating life cycle replacement works on PKC’s domestic tenanted properties within Perth City and Couth areas.\nThe works comprise of the like-for-like replacement of gas boilers and radiators, full gas boiler systems inclusive of radiators and pipework; replacement of electric storage and panel heating systems, as well as the replacement of existing storage heating, electric wet boilers, and solid fuel heating with Air Source Heat Pumps. This list is not exhaustive. The full scope of works will be set out in the Employer’s Requirements within the tender documentation.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "60"
+        },
+        {
+         "type": "price",
+         "description": "40"
+        }
+       ]
+      },
+      "value": {
+       "amount": 2630000,
+       "currency": "GBP"
+      },
+      "contractPeriod": {
+       "durationInDays": 720
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "Perth & Kinross Council will have the option to extend the contract for a period of up to 12 months."
+      },
+      "submissionTerms": {
+       "variantPolicy": "notAllowed"
+      },
+      "hasOptions": false,
+      "status": "active"
+     },
+     {
+      "id": "1",
+      "title": "Lot 1 Letham and North",
+      "description": "Perth & Kinross Council (‘the Council’) is seeking to appoint a suitably qualified and experienced contractor to carry out central heating life cycle replacement works on PKC’s domestic tenanted properties within Letham and North areas.\nThe works comprise of the like-for-like replacement of gas boilers and radiators, full gas boiler systems inclusive of radiators and pipework; replacement of electric storage and panel heating systems, as well as the replacement of existing storage heating, electric wet boilers, and solid fuel heating with Air Source Heat Pumps. This list is not exhaustive. The full scope of works will be set out in the Employer’s Requirements within the tender documentation.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "60"
+        },
+        {
+         "type": "price",
+         "description": "40"
+        }
+       ]
+      },
+      "value": {
+       "amount": 2070000,
+       "currency": "GBP"
+      },
+      "contractPeriod": {
+       "durationInDays": 720
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "The contract will include an option to extend the contract for a period of up to 12 months."
+      },
+      "submissionTerms": {
+       "variantPolicy": "notAllowed"
+      },
+      "hasOptions": false,
+      "status": "active"
+     }
+    ],
+    "items": [
+     {
+      "id": "2",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "45331100",
+        "description": "Central-heating installation work"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM77"
+       }
+      ],
+      "relatedLot": "2"
+     },
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "45331100",
+        "description": "Central-heating installation work"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM77"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Perth & Kinross Council area"
+      },
+      "relatedLot": "1"
+     }
+    ],
+    "submissionMethod": [
+     "electronicSubmission"
+    ],
+    "submissionMethodDetails": "https://www.publictendersscotland.publiccontractsscotland.gov.uk/esop/pts-host/public/pts/web/login.html",
+    "selectionCriteria": {
+     "criteria": [
+      {
+       "type": "economic",
+       "description": "4B.4 Bidders will be required to state the values for the following for the last two financial years:\n1.            Current Ratio (Current Assets divided by Current Liabilities)\n2.            Net Assets (Net Worth) (value per the Balance Sheet)\n4B.5.1.a Bidders must confirm they already have, or can commit to obtain, prior to commencement of the contract Professional Risk Indemnity Insurance.\n4B.5.1b Bidders must confirm they already have, or can commit to obtain, prior to commencement of the contract Employer’s Liability Insurance.\n4B.5.2 Bidders must confirm they already have, or can commit to obtain, prior to commencement of the contract Public Liability Insurance.",
+       "minimum": "The acceptable range is:\n1.\tCurrent Ratio - it is expected that the ratio is equal to or greater than 1, i.e. Current Assets will equal or exceed Current Liabilities for both years. Reasons for not meeting the required test to be disclosed by tenderers together with appropriate supporting evidence to confirm the suitability of the tenderer for the contract.\n2.         Net Assets (Net Worth) - it is expected that the Net Worth will be positive, i.e. a Net Assets position for both years. Reasons for not meeting the required test to be disclosed together with appropriate supporting evidence to confirm the suitability of the tenderer for the contract.\n4B.5.1.a Bidders must confirm they already have, or can commit to obtain, prior to commencement of the contract Professional Risk Indemnity Insurance in the sum of 2,000,000 GBP for any one occurrence or series of occurrences arising out of one event.\n4B.5.1b Bidders must confirm they already have, or can commit to obtain, prior to commencement of the contract Employer’s Liability Insurance in the sum of 10,000,000GBP for any one occurrence or series of occurrences arising out of one event.\n4B.5.2 Bidders must confirm they already have, or can commit to obtain, prior to commencement of the contract Public Liability Insurance in the sum of 5,000,000 GBP for any one occurrence or series of occurrences arising out of one event.",
+       "appliesTo": [
+        "supplier"
+       ]
+      },
+      {
+       "type": "technical",
+       "description": "4C.1 Bidders will be required to provide one example of how they have delivered a similar contract within the last five years to what is being described in part 11.2.3 of the Find a Tender Service Contract notice or the relevant site notice.\n4C.6 Bidders will be required to confirm that they and/or the service provider have the following relevant educational and professional qualifications.\n4D.\tQuality Assurance Schemes and Environmental Standards\n1. Bidders must hold a UKAS (or equivalent) accredited independent third-party certificate of compliance in accordance with BS EN ISO 9001 (or equivalent),\nOR see Instructions for Tenderers document.",
+       "minimum": "4c.1\nSuppliers are asked to provide one example of working on central heating in affordable and social housing.\n4C.6\nSite Supervisor Safety Training Scheme\nConstruction Skills Certification Scheme\nNICEIC/SELECT\nSNIPEF – or provide evidence of staff qualifications (CSCS Card)\nGAS Safe\nJoint Industry Board\nMCS\nHWSS\nHNC Construction Management (or equivalent)",
+       "appliesTo": [
+        "supplier"
+       ]
+      }
+     ]
+    },
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "coveredBy": [
+     "GPA"
+    ],
+    "tenderPeriod": {
+     "endDate": "2027-01-07T12:00:00Z"
+    },
+    "submissionTerms": {
+     "languages": [
+      "en"
+     ],
+     "bidValidityPeriod": {
+      "durationInDays": 90
+     }
+    },
+    "awardPeriod": {
+     "startDate": "2027-01-07T12:00:00Z"
+    },
+    "bidOpening": {
+     "date": "2027-01-07T12:00:00Z"
+    },
+    "hasRecurrence": false
+   },
+   "parties": [
+    {
+     "name": "Perth & Kinross Council",
+     "id": "GB-FTS-1263",
+     "identifier": {
+      "legalName": "Perth & Kinross Council"
+     },
+     "address": {
+      "streetAddress": "2 High Street",
+      "locality": "Perth",
+      "region": "UKM77",
+      "postalCode": "PH1 5PH",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://www.pkc.gov.uk/article/15478/Tenders-and-contracts",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA00372",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "REGIONAL_AUTHORITY",
+        "description": "Regional or local authority"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "01",
+        "description": "General public services"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-1263",
+    "name": "Perth & Kinross Council"
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000849047"
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-07c02d",
+   "id": "110065-2026",
+   "date": "2026-11-20T11:11:39Z",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "NM&DDC2027",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "Provision of Insurance and related Services to  Newry Mourne & Down District Council (via Insurance Services 3 GCA Framework RM6138 via DPS)",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "66510000",
+     "description": "Insurance services"
+    },
+    "mainProcurementCategory": "services",
+    "description": "Provision of Insurance and related Services to \nNewry Mourne & Down District Council (via Insurance\nServices 3 GCA RM6138 via DPS). At time of\ntendering all suppliers must be on the RM6138 DPS.",
+    "value": {
+     "amount": 1527500,
+     "currency": "GBP"
+    },
+    "lotDetails": {
+     "maximumLotsBidPerSupplier": null,
+     "maximumLotsAwardedPerSupplier": 1
+    },
+    "lots": [
+     {
+      "id": "1",
+      "title": "Combined Liability Insurance",
+      "description": "Combined Liability Insurance. To be managed by\nArthur J Gallagher Insurance Brokers Ltd as the\ncontracting authority's appointed insurance broker\nand adviser (via GCA RM6138 DPS)",
+      "value": {
+       "amount": 1527500,
+       "currency": "GBP"
+      },
+      "contractPeriod": {
+       "startDate": "2027-04-01T00:00:00+01:00",
+       "endDate": "2028-03-31T23:59:59+01:00"
+      },
+      "hasRenewal": false,
+      "submissionTerms": {
+       "variantPolicy": "allowed"
+      },
+      "hasOptions": false,
+      "status": "active"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "66516000",
+        "description": "Liability insurance services"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKN"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "submissionMethod": [
+     "electronicSubmission"
+    ],
+    "submissionMethodDetails": "https://www.delta-esourcing.com/",
+    "selectionCriteria": {
+     "criteria": [
+      {
+       "type": "economic",
+       "description": "Suppliers must be included on GCA RM6138 DPS at\ntime tender submitted, & for duration of contract\nperiod.",
+       "appliesTo": [
+        "supplier"
+       ]
+      }
+     ]
+    },
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "tenderPeriod": {
+     "endDate": "2027-01-08T15:00:00Z"
+    },
+    "submissionTerms": {
+     "languages": [
+      "en"
+     ]
+    },
+    "awardPeriod": {
+     "startDate": "2027-01-08T16:00:00Z"
+    },
+    "bidOpening": {
+     "date": "2027-01-08T16:00:00Z"
+    },
+    "hasRecurrence": false
+   },
+   "parties": [
+    {
+     "name": "Newry Mourne & Down District Council",
+     "id": "GB-FTS-179328",
+     "identifier": {
+      "legalName": "Newry Mourne & Down District Council",
+      "noIdentifierRationale": "notOnAnyRegister"
+     },
+     "address": {
+      "streetAddress": "Unit 19 Greenbank Industrial Estate",
+      "locality": "Newry",
+      "region": "UKN08",
+      "postalCode": "BT342QU",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "https://www.ajg.com/uk/",
+      "buyerProfile": "https://www.newrymournedown.org/",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "REGIONAL_AUTHORITY",
+        "description": "Regional or local authority"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "01",
+        "description": "General public services"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-179328",
+    "name": "Newry Mourne & Down District Council"
+   },
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-07c017",
+   "id": "110019-2026",
+   "date": "2026-11-20T08:54:26Z",
+   "tag": [
+    "tender"
+   ],
+   "description": "n/a\nNOTE: To register your interest in this notice and obtain any additional information please visit the Public Contracts Scotland Web Site at https://www.publiccontractsscotland.gov.uk/Search/Search_Switch.aspx?ID=848952.\nThe buyer has indicated that it will accept electronic responses to this notice via the Postbox facility. A user guide is available at https://www.publiccontractsscotland.gov.uk/sitehelp/help_guides.aspx.\nSuppliers are advised to allow adequate time for uploading documents and to dispatch the electronic response well in advance of the closing time to avoid any last minute problems.\nA sub-contract clause has been included in this contract. For more information see: http://www.publiccontractsscotland.gov.uk/info/InfoCentre.aspx?ID=2363\nCommunity benefits are included in this requirement. For more information see: https://www.gov.scot/policies/public-sector-procurement/community-benefits-in-procurement/\nA summary of the expected community benefits has been provided as follows:\nSuppliers will be required to deliver Community Benefits where annual spend exceeds GBP 25,000 or where cumulative expenditure over the full framework term exceeds GBP 25,000.\nThe Council’s Contracts Officer will contact suppliers at the annual review point to confirm the Community Benefit points accumulated during the year and assist with arranging delivery of the agreed benefits.\n(SC Ref:848952)\nDownload the ESPD document here: https://www.publiccontractsscotland.gov.uk/ESPD/ESPD_Download.aspx?id=848952",
+   "initiationType": "tender",
+   "tender": {
+    "id": "1001626",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "Road Materials, Aggregates (Dry) & Ready-Mix Cement Framework Agreement",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "44113310",
+     "description": "Coated road materials"
+    },
+    "mainProcurementCategory": "goods",
+    "description": "This is the 5th generation of the Framework Agreement  for the Supply and Delivery of Roads Materials, Aggregates (dry) and Ready-Mix Concrete Framework Agreement. It is divided into 3 lots: Lot 1 - Road Surfacing Materials, Lot 2 - Aggregates (dry), Lot 3 - Ready Mix Concrete. The framework value over a 4-year period is approximately GBP 20 million.",
+    "value": {
+     "amount": 20000000,
+     "currency": "GBP"
+    },
+    "lotDetails": {
+     "maximumLotsBidPerSupplier": null
+    },
+    "lots": [
+     {
+      "id": "1",
+      "title": "Road Surfacing Materials",
+      "description": "This is the 5th generation of the Framework Agreement for the Supply and Delivery of Roads Materials, Aggregates (dry) and Ready-Mix Concrete. It is divided into 3 lots.\nLot 1 - Road Surfacing Materials\nLot 2 - Aggregates (dry)\nLot 3 - Ready Mix Concrete\nSuppliers are welcome to submit tenders for a single lot, multiple lots, or the entire set. Additional information: n/a",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "20"
+        },
+        {
+         "type": "price",
+         "description": "80"
+        }
+       ]
+      },
+      "contractPeriod": {
+       "durationInDays": 1440
+      },
+      "hasRenewal": false,
+      "submissionTerms": {
+       "variantPolicy": "notAllowed"
+      },
+      "hasOptions": false,
+      "status": "active"
+     },
+     {
+      "id": "2",
+      "title": "Aggregates (dry)",
+      "description": "This is the 5th generation of the Framework Agreement for the Supply and Delivery of Roads Materials, Aggregates (dry) and Ready-Mix Concrete. It is divided into 3 lots.\nLot 1 - Road Surfacing Materials\nLot 2 - Aggregates (dry)\nLot 3 - Ready Mix Concrete\nSuppliers are welcome to submit tenders for a single lot, multiple lots, or the entire set. Additional information: n/a",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "20"
+        },
+        {
+         "type": "price",
+         "description": "80"
+        }
+       ]
+      },
+      "contractPeriod": {
+       "durationInDays": 1440
+      },
+      "hasRenewal": false,
+      "submissionTerms": {
+       "variantPolicy": "notAllowed"
+      },
+      "hasOptions": false,
+      "status": "active"
+     },
+     {
+      "id": "3",
+      "title": "Ready Mix Concrete",
+      "description": "This is the 5th generation of the Framework Agreement for the Supply and Delivery of Roads Materials, Aggregates (dry) and Ready-Mix Concrete. It is divided into 3 lots.\nLot 1 - Road Surfacing Materials\nLot 2 - Aggregates (dry)\nLot 3 - Ready Mix Concrete\nSuppliers are welcome to submit tenders for a single lot, multiple lots, or the entire set. Additional information: n/a",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "20"
+        },
+        {
+         "type": "price",
+         "description": "80"
+        }
+       ]
+      },
+      "contractPeriod": {
+       "durationInDays": 1440
+      },
+      "hasRenewal": false,
+      "submissionTerms": {
+       "variantPolicy": "notAllowed"
+      },
+      "hasOptions": false,
+      "status": "active"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "44113800",
+        "description": "Road-surfacing materials"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM91"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Scottish Borders"
+      },
+      "relatedLot": "1"
+     },
+     {
+      "id": "2",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "14212200",
+        "description": "Aggregates"
+       },
+       {
+        "scheme": "CPV",
+        "id": "14212000",
+        "description": "Granules, chippings, stone powder, pebbles, gravel, broken and crushed stone, stone mixtures, sand-gravel mixtures and other aggregates"
+       },
+       {
+        "scheme": "CPV",
+        "id": "14210000",
+        "description": "Gravel, sand, crushed stone and aggregates"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM91"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Scottish Borders"
+      },
+      "relatedLot": "2"
+     },
+     {
+      "id": "3",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "44114000",
+        "description": "Concrete"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM91"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Scottish Borders"
+      },
+      "relatedLot": "3"
+     }
+    ],
+    "submissionMethod": [
+     "electronicSubmission"
+    ],
+    "submissionMethodDetails": "https://www.publiccontractsscotland.gov.uk",
+    "documents": [
+     {
+      "documentType": "economicSelectionCriteria",
+      "id": "economic"
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "techniques": {
+     "hasFrameworkAgreement": true,
+     "frameworkAgreement": {
+      "maximumParticipants": null,
+      "periodRationale": "n/a"
+     }
+    },
+    "coveredBy": [
+     "GPA"
+    ],
+    "tenderPeriod": {
+     "endDate": "2027-01-05T12:00:00Z"
+    },
+    "submissionTerms": {
+     "languages": [
+      "en"
+     ]
+    },
+    "awardPeriod": {
+     "startDate": "2027-01-05T12:00:00Z"
+    },
+    "bidOpening": {
+     "date": "2027-01-05T12:00:00Z"
+    },
+    "hasRecurrence": true,
+    "contractTerms": {
+     "hasElectronicOrdering": true,
+     "electronicInvoicingPolicy": "allowed",
+     "hasElectronicPayment": true
+    },
+    "recurrence": {
+     "description": "October 2030"
+    }
+   },
+   "parties": [
+    {
+     "name": "Scottish Borders Council",
+     "id": "GB-FTS-3123",
+     "identifier": {
+      "legalName": "Scottish Borders Council"
+     },
+     "address": {
+      "streetAddress": "Council Headquarters",
+      "locality": "Newtown St Boswells",
+      "region": "UKM91",
+      "postalCode": "TD6 0SA",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer",
+      "centralPurchasingBody"
+     ],
+     "details": {
+      "url": "http://www.scotborders.gov.uk",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA00394",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "REGIONAL_AUTHORITY",
+        "description": "Regional or local authority"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "01",
+        "description": "General public services"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-3123",
+    "name": "Scottish Borders Council"
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000848952"
+    }
+   ],
+   "language": "en"
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+    "actorSpecification": 1,
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "releaseDate",
+                    "stage",
+                    "title",
+                    "buyerName",
+                    "buyerRegion",
+                    "cpvCode",
+                    "valueAmount",
+                    "valueCurrency",
+                    "tenderDeadline",
+                    "noticeUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "releaseDate": {
+                        "label": "Published",
+                        "format": "date"
+                    },
+                    "stage": {
+                        "label": "Stage"
+                    },
+                    "title": {
+                        "label": "Title"
+                    },
+                    "buyerName": {
+                        "label": "Buyer"
+                    },
+                    "buyerRegion": {
+                        "label": "Region"
+                    },
+                    "cpvCode": {
+                        "label": "CPV"
+                    },
+                    "valueAmount": {
+                        "label": "Value",
+                        "format": "number"
+                    },
+                    "valueCurrency": {
+                        "label": "Cur."
+                    },
+                    "tenderDeadline": {
+                        "label": "Deadline",
+                        "format": "date"
+                    },
+                    "noticeUrl": {
+                        "label": "Notice",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}

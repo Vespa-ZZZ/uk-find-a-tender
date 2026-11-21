@@ -1,0 +1,120 @@
+{
+    "title": "UK public tenders (Find a Tender)",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "stages": {
+            "title": "Notice stages",
+            "type": "array",
+            "editor": "select",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "tender",
+                    "planning",
+                    "award"
+                ],
+                "enumTitles": [
+                    "Tender (open opportunities)",
+                    "Planning (pipeline / preliminary market engagement)",
+                    "Award (contract awards)"
+                ]
+            },
+            "prefill": [
+                "tender"
+            ],
+            "default": [
+                "tender"
+            ],
+            "description": "Which OCDS stages to fetch."
+        },
+        "keywords": {
+            "title": "Keywords (any)",
+            "type": "array",
+            "editor": "stringList",
+            "prefill": [
+                "software"
+            ],
+            "description": "Keep notices whose title or description contains at least one keyword (case-insensitive)."
+        },
+        "cpvPrefixes": {
+            "title": "CPV code prefixes",
+            "type": "array",
+            "editor": "stringList",
+            "description": "Keep notices with a CPV code starting with one of these digits, e.g. 72 (IT services), 45 (construction), 85 (health and social services), 7222."
+        },
+        "regions": {
+            "title": "Buyer region (NUTS/ITL prefix)",
+            "type": "array",
+            "editor": "stringList",
+            "description": "Keep notices whose buyer address region starts with one of these codes, e.g. UKI (London), UKM (Scotland), UKL (Wales), UKN (Northern Ireland)."
+        },
+        "minValue": {
+            "title": "Minimum value (GBP)",
+            "type": "integer",
+            "minimum": 0,
+            "description": "Keep notices with an estimated value (or, for awards, the total contract value) at or above this amount. Notices without a value are excluded when set."
+        },
+        "maxValue": {
+            "title": "Maximum value (GBP)",
+            "type": "integer",
+            "minimum": 0,
+            "description": "Keep notices with an estimated total value at or below this amount."
+        },
+        "onlyOpen": {
+            "title": "Only open tenders",
+            "type": "boolean",
+            "default": false,
+            "description": "Keep only notices that can still be responded to: tender deadline (or expression-of-interest deadline) in the future, not cancelled/withdrawn."
+        },
+        "updatedFrom": {
+            "title": "Updated from",
+            "type": "string",
+            "editor": "datepicker",
+            "description": "Start of the publication/update window (YYYY-MM-DD). Default: the last 'Days back' days."
+        },
+        "updatedTo": {
+            "title": "Updated to",
+            "type": "string",
+            "editor": "datepicker",
+            "description": "End of the window (YYYY-MM-DD, the whole day is included). Default: now."
+        },
+        "daysBack": {
+            "title": "Days back (default window)",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 90,
+            "default": 3,
+            "description": "Used when 'Updated from' is empty."
+        },
+        "onlyNew": {
+            "title": "Monitoring mode: only new notices",
+            "type": "boolean",
+            "default": false,
+            "description": "Remember notices (and amended versions) already returned and output only new ones. Schedule daily."
+        },
+        "stateKey": {
+            "title": "Monitoring state key",
+            "type": "string",
+            "editor": "textfield",
+            "pattern": "^[a-zA-Z0-9_-]{1,50}$",
+            "default": "default",
+            "description": "Separate 'already seen' list per search. Do not run two schedules with the same key at the same time."
+        },
+        "maxItems": {
+            "title": "Max notices",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50000,
+            "default": 500,
+            "description": "Maximum number of notices to output."
+        },
+        "requestIntervalMs": {
+            "title": "Delay between API pages (ms)",
+            "type": "integer",
+            "minimum": 2000,
+            "default": 2000,
+            "description": "Pause between API requests (100 notices per page)."
+        }
+    }
+}

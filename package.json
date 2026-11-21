@@ -1,0 +1,16 @@
+{
+  "name": "uk-find-a-tender",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "UK public procurement notices from Find a Tender (OCDS API) with monitoring mode.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test test/fts.test.js test/run.test.js"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6"
+  }
+}

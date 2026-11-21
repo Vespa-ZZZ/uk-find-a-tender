@@ -1,0 +1,2558 @@
+{
+ "uri": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-11-20T00:00:00&updatedTo=2026-11-20T12:00:00&limit=5&stages=award",
+ "version": "1.1",
+ "extensions": [
+  "https://standard.open-contracting.org/profiles/eu/latest/en/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_amendment_rationale_classifications_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_contract_completion_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_documentation_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_pagination_extension/master/extension.json",
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_suitability_extension/master/extension.json",
+  "https://raw.githubusercontent.com/portaledcahn/ocds_Links_extension/main/extension.json",
+  "https://raw.githubusercontent.com/cabinetoffice/ocds_uk_extension/main/extension.json"
+ ],
+ "publishedDate": "2026-11-20T11:50:08Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "ocid": "ocds-h6vhtk-07bfe9",
+   "id": "110093-2026",
+   "date": "2026-11-20T11:50:08Z",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "description": "(SC Ref:849058)",
+   "initiationType": "tender",
+   "tender": {
+    "id": "PKC14238",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "PKC14238  Central Heating Upgrade Phase 6",
+    "status": "cancelled",
+    "classification": {
+     "scheme": "CPV",
+     "id": "45331100",
+     "description": "Central-heating installation work"
+    },
+    "mainProcurementCategory": "works",
+    "description": "Perth & Kinross Council (‘the Council’) is seeking to appoint suitably qualified and experienced contractors to carry out central heating life cycle replacement works on PKC’s domestic tenanted properties.\nThe works comprise of the like-for-like replacement of gas boilers and radiators, full gas boiler systems inclusive of radiators and pipework; replacement of electric storage and panel heating systems, as well as the replacement of existing storage heating, electric wet boilers, and solid fuel heating with Air Source Heat Pumps. This list is not exhaustive. The full scope of works will be set out in the Employer’s Requirements within the tender documentation.",
+    "lots": [
+     {
+      "id": "1",
+      "title": "Lot 1 Letham and North",
+      "description": "Perth & Kinross Council (‘the Council’) is seeking to appoint a suitably qualified and experienced contractor to carry out central heating life cycle replacement works on PKC’s domestic tenanted properties within Letham and North areas.\nThe works comprise of the like-for-like replacement of gas boilers and radiators, full gas boiler systems inclusive of radiators and pipework; replacement of electric storage and panel heating systems, as well as the replacement of existing storage heating, electric wet boilers, and solid fuel heating with Air Source Heat Pumps. This list is not exhaustive. The full scope of works will be set out in the Employer’s Requirements within the tender documentation.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "60"
+        },
+        {
+         "type": "price",
+         "description": "40"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "2",
+      "title": "Lot 2 City and South Area",
+      "description": "Perth & Kinross Council (‘the Council’) is seeking to appoint a suitably qualified and experienced contractors to carry out central heating life cycle replacement works on PKC’s domestic tenanted properties within Perth City and Couth areas.\nThe works comprise of the like-for-like replacement of gas boilers and radiators, full gas boiler systems inclusive of radiators and pipework; replacement of electric storage and panel heating systems, as well as the replacement of existing storage heating, electric wet boilers, and solid fuel heating with Air Source Heat Pumps. This list is not exhaustive. The full scope of works will be set out in the Employer’s Requirements within the tender documentation.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "60"
+        },
+        {
+         "type": "price",
+         "description": "40"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "45331100",
+        "description": "Central-heating installation work"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM77"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Perth & Kinross Council area"
+      },
+      "relatedLot": "1"
+     },
+     {
+      "id": "2",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "45331100",
+        "description": "Central-heating installation work"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM77"
+       }
+      ],
+      "relatedLot": "2"
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "coveredBy": [
+     "GPA"
+    ]
+   },
+   "awards": [
+    {
+     "id": "110093-2026-PKC14238-1",
+     "relatedLots": [
+      "2"
+     ],
+     "title": "Lot 2 City and South Area",
+     "status": "unsuccessful",
+     "statusDetails": "discontinued"
+    },
+    {
+     "id": "110093-2026-PKC14238-2",
+     "relatedLots": [
+      "1"
+     ],
+     "title": "Lot 1 Letham and North",
+     "status": "unsuccessful",
+     "statusDetails": "discontinued"
+    }
+   ],
+   "parties": [
+    {
+     "name": "Perth & Kinross Council",
+     "id": "GB-FTS-1263",
+     "identifier": {
+      "legalName": "Perth & Kinross Council"
+     },
+     "address": {
+      "streetAddress": "2 High Street",
+      "locality": "Perth",
+      "region": "UKM77",
+      "postalCode": "PH1 5PH",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://www.pkc.gov.uk/article/15478/Tenders-and-contracts",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA00372",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "REGIONAL_AUTHORITY",
+        "description": "Regional or local authority"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "01",
+        "description": "General public services"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-1263",
+    "name": "Perth & Kinross Council"
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000848983"
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-06c188",
+   "id": "110091-2026",
+   "date": "2026-11-20T11:46:45Z",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "description": "Once the deadline has passed submissions can neither be created nor submitted. It is not advisable for Suppliers to wait until the last moment before creating and dispatching a response in case of any last minute problems. Please note large files should be uploaded as early as possible to ensure transfer before deadline. If a Supplier is having problems uploading to the PCS site, then the University must be informed well in advance and depending upon the merit of the case, the University may arrange for the tender to remain open on the PCS system for a short period after the deadline time stated. System problems do not fall under the University’s remit and should be referred to PCS.\nPostbox Security: Postbox submissions cannot be accessed by anyone, including Millstream, (the provider of the Public Contracts Scotland system) until the deadline.\nFreedom of Information\nThe Freedom of Information (Scotland) Act 2002 (FOISA), which came into force on 1 January 2005, designates University of Glasgow as a Scottish public authority and therefore subject to the provisions and obligations in that Act. This means that any person who makes a valid request for information held by University of Glasgow will be entitled to receive it, unless all or part of that information can be withheld by virtue of the exemptions in that Act.\nunder the Act, University of Glasgow may be required to disclose any information held relating to your response to anyone who makes a request under that Act. Such information may only be withheld if it meets one or more of the exemptions or conditions in that Act. Even if an exemption is available University of Glasgow may nevertheless disclose requested information. Information held cannot simply be classified as “confidential\" or \"commercial in confidence\" to enable it to be protected from disclosure.\nUniversity of Glasgow may publish the names and contact details of companies who have been issued with a Questionnaire on its website.\nInformation may also be requested under the UK General Data Protection Regulation (UK GDPR) tailored by the Data Protection Act 2018 and the Environmental Information (Scotland) Regulations 2004.\n(SC Ref:849045)",
+   "initiationType": "tender",
+   "tender": {
+    "id": "PURCH2932",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "PURCH2932 Provision of Laser Drilling and Patterning System",
+    "status": "cancelled",
+    "classification": {
+     "scheme": "CPV",
+     "id": "38000000",
+     "description": "Laboratory, optical and precision equipments (excl. glasses)"
+    },
+    "mainProcurementCategory": "goods",
+    "description": "PURCH2932 Provision of Laser Drilling and Patterning System\nTender documents available from Public Contracts Scotland.\nTender returns should be submitted via Public Contracts Scotland, no paper copies will be accepted. Should paper tenders be submitted, they will be rejected. Further to this any questions or communications regarding individual tender exercises must be sent via the Public Contracts Scotland Portal. Tender queries received through any other channel will not be answered. Should users of Public Contracts Scotland have any problems with the web site they should contact website Support Desk, contact details can be found by following the ‘Contact Us’ option on the left hand menu at http://www.publiccontractsscotland.gov.uk/default.aspx",
+    "lots": [
+     {
+      "id": "1",
+      "description": "PURCH2932 Provision of Laser Drilling and Patterning System\nThe University wishes to procure a laser drilling and patterning system.  The proposed laser selective etching system shall provide a high-precision, non-contact manufacturing solution for the fabrication of complex vias and microfluidic structures into glass substrates.\nThis procurement process is being conducted using the Competitive Procedure with Negotiation (CPN) in accordance with the requirements of Regulation 30 of the PC(S)R 2015. Although this procurement is being conducted under the Competitive Procedure with Negotiation (CPN), it is structured differently from a typical CPN process. This approach has been adopted to enhance the efficiency of evaluating supplier responses across both stages (SPD and ITT).\nPlease refer to the PURCH2932 - Schedule 1A - ITT document for additional information and specification.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Stage 1 Quality - Section 1 - Technical Spcecification",
+         "type": "quality",
+         "description": "35%"
+        },
+        {
+         "name": "Stage 1 Quality - Section 2 - Delivery, Installation & Warranty",
+         "type": "quality",
+         "description": "5%"
+        },
+        {
+         "name": "Stage 1 Quality - Section 3 - Acceptance Tests",
+         "type": "quality",
+         "description": "20%"
+        },
+        {
+         "type": "price",
+         "description": "40%"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "UKM82"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Glasgow"
+      },
+      "relatedLot": "1"
+     }
+    ],
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Competitive procedure with negotiation",
+    "coveredBy": [
+     "GPA"
+    ]
+   },
+   "awards": [
+    {
+     "id": "110091-2026-PURCH2932-1",
+     "relatedLots": [
+      "1"
+     ],
+     "status": "unsuccessful",
+     "statusDetails": "discontinued"
+    }
+   ],
+   "parties": [
+    {
+     "name": "University of Glasgow",
+     "id": "GB-FTS-1836",
+     "identifier": {
+      "legalName": "University of Glasgow"
+     },
+     "address": {
+      "streetAddress": "Procurement Office, Tay House",
+      "locality": "Glasgow",
+      "region": "UKM82",
+      "postalCode": "G12 8QQ",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://www.gla.ac.uk/",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA00108",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "BODY_PUBLIC",
+        "description": "Body governed by public law"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "09",
+        "description": "Education"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-1836",
+    "name": "University of Glasgow"
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000836205"
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-04ff1e",
+   "id": "110088-2026",
+   "date": "2026-11-20T11:44:06Z",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "description": "Form of Tender\nTenderers signed Appendix A prior to award to confirm that their Tender Response was a complete, true and accurate submission.\nFreedom of Information\nTenderers confirmed that they would be in a position to complete, prior to award, Appendix B (if applicable) in the  Technical Questionnaire. It was for information only and was not be scored.\nSustain Supply Chain Code of Conduct\nThe Authority has developed Appendix D which sets out its expected standards for its supply chain in social, ethical and environmental compliance. Tenderers completed the Sustain Supply Chain Code of Conduct prior to award to assist in achieving its objectives.\nList Of Institutions\nTenderers completed Appendix E to confirm their ability to service the required coverage levels.\nGDPR Contractor Assessment Form\nTenderers completed Appendix G  in the Technical Questionnaire in PCS-Tender. It was for Information only and was not be scored but was a requirement of this tender and was included in the contractual terms.\nPrompt Payment\nTenderers confirmed that payment of subcontractors at all stages of the supply chain will be made within a maximum of 30 days and that this will be managed. It was for information only and was not be scored but was a requirement of this tender and was included in the contractual terms.\nSerious Organised Crime\nTenderers completed Appendix H - Declaration of Non-Involvement in Serious Organised Crime. It was for information only and was not scored but was a requirement of this tender and was included in the contractual terms.\nHuman Trafficking & Labour Exploitation\nTenderers completed Appendix I - Declaration of Non-Involvement in Human Trafficking & labour Exploitation. It was for information only and was not scored but it was a requirement of this tender and was  included in the contractual terms.\nSCM Responsible Procurement Supply Chain Evaluation Tool: Section 1\nSCM RP Section 1 is the Authority's designated tool for contracted suppliers to keep up-to-date essential information on their company, which allows the Authority to get an insight into their company’s general standing, commitment to preventing modern slavery and addressing climate change, as well as their pledge to fair and decent working practices for their staff.  Tenderers confirmed that they will commit to completing SCM RP Section 1 on award and review on a yearly basis. It was for information only and was not scored but was a requirement of this tender and was included in the contractual terms.\nLiving Wage Status\nTenderers were asked to provide details on their position on the Real Living Wage. It was for information only and was not scored.\n(SC Ref:814004)",
+   "initiationType": "tender",
+   "tender": {
+    "id": "JAN1013 AP",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "PPE, Workwear & Sportswear (APUC)",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "18100000",
+     "description": "Occupational clothing, special workwear and accessories"
+    },
+    "mainProcurementCategory": "goods",
+    "description": "The Authority was seeking Contractor(s) for PPE, Workwear and Sportswear  to the Higher (HE) and Further (FE) Education Institutions throughout Scotland and Higher Education Institutions and other organisations in England and Wales. This included all members, associate members and their associated and affiliated bodies of APUC Ltd.(Advanced Procurement for Universities & Colleges), HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium), LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium), as detailed within Appendix E - List of Institutions, as issued with the Invitation Tender.\nThe estimated value of the above bodies was estimated at 10,380,000 GBP per annum.\nCollaborative Partners include the Scottish Ministers (including Agencies), Scottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing.\nInformation about agencies of the Scottish Ministers, Scottish Non-Departmental Public Bodies and offices in the Scottish Administration which are not ministerial offices are listed at:\nhttp://www.scotland.gov.uk/Topics/Government/public-bodies/about/Bodies\nScotland Excel and their associate members and NHS Scotland, NHS National Services Scotland and territorial and special health boards were also named as having access to this Framework Agreement. This is part of the resilience measures across the public sector, and this will be reflected in the inflated contract value notice. Access by these parties is not designed for ‘business as usual’ activities and purchasing, unless otherwise advised by the relevant parties.\nThe estimated value of the above bodies is estimated at 32,500,000 GBP per annum.",
+    "lots": [
+     {
+      "id": "4",
+      "title": "Lot 2B - General Workwear & Footwear (England, Wales and Northern Ireland)",
+      "description": "The Authority was seeking Contractor(s) for PPE to the Higher Education institutions and other organisations in England, Wales and Northern Ireland. This included all members, associate members and their associated and affiliated bodies of: HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium,   LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "6",
+      "title": "Lot 3B - Lab Coats & Dentistry (England, Wales and Northern Ireland)",
+      "description": "The Authority was seeking Contractor(s) for Lab Coats and Dentistry wear to the Higher Education institutions and other organisations in England, Wales and Northern Ireland. This included all members, associate members and their associated and affiliated bodies of: HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium,   LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium) as detailed in Appendix E - List of Institutions, as issued with the the ITT.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "8",
+      "title": "Lot 4B - Catering & Front of House (England, Wales and Northern Ireland)",
+      "description": "The Authority was seeking Contractor(s) for Catering & Front of House uniform to the Higher Education institutions and other organisations in England, Wales and Northern Ireland. This included all members, associate members and their associated and affiliated bodies of: HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium,   LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "10",
+      "title": "Lot 5B - Specialist PPE (England, Wales and Northern Ireland)",
+      "description": "The Authority was seeking Contractor(s) for specialist PPE to the Higher Education institutions and other organisations in England, Wales and Northern Ireland. This included all members, associate members and their associated and affiliated bodies of: HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium,   LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "12",
+      "title": "Lot 6B - Sports and Fitness Clothing (England, Wales and Northern Ireland)",
+      "description": "The Authority was seeking Contractor(s) for Sports and Fitness clothing to the Higher Education institutions and other organisations in England, Wales and Northern Ireland. This included all members, associate members and their associated and affiliated bodies of: HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium,   LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nA maximum of 6 Contractors were appointed per lot Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "15",
+      "title": "Lot 8B - One Stop Shop (England, Wales and Northern Ireland)",
+      "description": "The Authority was seeking Contractor(s) for One Stop Shop combining the majority of products available on the previous lots  to the Higher and Further Education Institutions in England, Wales and Northern Ireland. This included all members, associate members and their associated and affiliated bodies of:  HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium,   LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nA maximum of 6 Contractors were appointed per lot Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "3",
+      "title": "Lot 2A - General Workwear & Footwear (Scotland Wide)",
+      "description": "The Authority was seeking Contractor(s) for General Workwear & footwear to the Higher(HE) and Further (FE) Education Institutions throughout Scotland. This included all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List of Institutions, as issued with the ITT. Collaborative Partners include the Scottish Ministers (including Agencies), Scottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "5",
+      "title": "Lot 3A - Lab Coats & Dentistry (Scotland Wide)",
+      "description": "The Authority was seeking Contractor(s) for Lab Coats and Dentistry wear to the Higher(HE) and Further (FE) Education Institutions throughout Scotland. This included all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List of Institutions, as issued with the ITT. Scottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "7",
+      "title": "Lot 4A - Catering & Front of House (Scotland Wide)",
+      "description": "The Authority was seeking Contractor(s) for Catering & Front of house uniform to the Higher(HE) and Further (FE) Education Institutions throughout Scotland. This included all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List of Institutions, as issued with the ITT. Scottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing,, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "9",
+      "title": "Lot 5A - Specialist PPE (Scotland Wide)",
+      "description": "The Authority was seeking Contractor(s) for Specialist PPE to the Higher(HE) and Further (FE) Education Institutions throughout Scotland. This includes all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nScottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing,, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "11",
+      "title": "Lot 6A - Sports & Fitness Clothing (Scotland Wide)",
+      "description": "The Authority was seeking Contractor(s) for Sports & Fitness Clothing to the Higher(HE) and Further (FE) Education Institutions throughout Scotland. This includes all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nScottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing,, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "13",
+      "title": "Lot 7A - Catering Kits",
+      "description": "The Authority was seeking Contractor(s) for Catering Kits to the Further (FE) Education Institutions throughout Scotland. This includes all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nScottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing,, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "14",
+      "title": "Lot 8A - One Stop Shop (Scotland Wide)",
+      "description": "The Authority was seeking Contractor(s) for One Stop Shop combining the majority of products available on the previous lots to the higher education(HE) Institutions and further education (FE) Institutions throughout Scotland, which includes all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List\nof Institutions, as issued with the ITT.\nScottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing,, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "1",
+      "title": "Lot 1A - General PPE (Scotland Wide)",
+      "description": "The Authority was seeking Contractor(s) for PPE to the Higher(HE) and Further (FE) Education Institutions throughout Scotland. This includes all members, associate members and their associated and affiliated bodies of APUC Ltd (Advanced Procurement Universities and Colleges) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nCollaborative Partners include the Scottish Ministers (including Agencies), Scottish Non-Departmental Public Bodies, offices in the Scottish Administration which are not ministerial offices, cross-border public authorities within the meaning of section 88(5) of the Scotland Act 1998, The Office of the Advocate General; The Office for the Secretary of State for Scotland, the Scottish Parliamentary Corporate Body, Student Loans Company Limited, the Commissioner of Northern Lighthouse operating as the Northern Lighthouse Board, Scottish Futures Trust, Equality and Human Rights Commission, Business Stream Ltd, any public body established by or under the Scotland Act 1998 or any Act of the Scottish Parliament, any association of or formed by one or more of the foregoing, bodies financed wholly or mainly by one or more of the foregoing, bodies subject to management supervision by one or more of the foregoing and bodies more than half of the board of directors or members of which, or, in the case of a group of individuals, more than half of those individuals, being appointed by one or more of the foregoing, Scotland Excel and their associate members and NHS Scotland, NHS National Services Scotland (NSS) and territorial and special health boards were also  named as having access to this Framework Agreement.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     },
+     {
+      "id": "2",
+      "title": "Lot 1B- General PPE (England, Wales and Northern Ireland)",
+      "description": "The Authority was seeking Contractor(s) for PPE to the Higher Education institutions and other organisations in England, Wales and Northern Ireland. This included all members, associate members and their associated and affiliated bodies of: HEPCW (Higher Education Procurement Consortia Wales), NEUPC (North Eastern Universities Purchasing Consortium), NWUPC (North Western Universities Purchasing Consortium,   LUPC (London Universities Purchasing Consortium) and SUPC (Southern Universities Purchasing Consortium) as detailed in Appendix E - List of Institutions, as issued with the ITT.\nA maximum of 6 Contractors were appointed per lot. Additional information: Economic operators may have been excluded from this competition if they are in any of the situations referred to in regulation 58 of the Public Contracts (Scotland) Regulations 2015.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical",
+         "type": "quality",
+         "description": "50"
+        },
+        {
+         "type": "price",
+         "description": "50"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     }
+    ],
+    "items": [
+     {
+      "id": "4",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18800000",
+        "description": "Footwear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18830000",
+        "description": "Protective footwear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18100000",
+        "description": "Occupational clothing, special workwear and accessories"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKC"
+       },
+       {
+        "region": "UKD"
+       },
+       {
+        "region": "UKE"
+       },
+       {
+        "region": "UKF"
+       },
+       {
+        "region": "UKG"
+       },
+       {
+        "region": "UKH"
+       },
+       {
+        "region": "UKI"
+       },
+       {
+        "region": "UKJ"
+       },
+       {
+        "region": "UKK"
+       },
+       {
+        "region": "UKL"
+       },
+       {
+        "region": "UKN"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 2B - England, Wales and Northern Ireland"
+      },
+      "relatedLot": "4"
+     },
+     {
+      "id": "6",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18400000",
+        "description": "Special clothing and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKC"
+       },
+       {
+        "region": "UKD"
+       },
+       {
+        "region": "UKE"
+       },
+       {
+        "region": "UKF"
+       },
+       {
+        "region": "UKG"
+       },
+       {
+        "region": "UKH"
+       },
+       {
+        "region": "UKI"
+       },
+       {
+        "region": "UKJ"
+       },
+       {
+        "region": "UKK"
+       },
+       {
+        "region": "UKL"
+       },
+       {
+        "region": "UKN"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 3B - England, Wales and Northern Ireland"
+      },
+      "relatedLot": "6"
+     },
+     {
+      "id": "8",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18100000",
+        "description": "Occupational clothing, special workwear and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKC"
+       },
+       {
+        "region": "UKD"
+       },
+       {
+        "region": "UKE"
+       },
+       {
+        "region": "UKF"
+       },
+       {
+        "region": "UKG"
+       },
+       {
+        "region": "UKH"
+       },
+       {
+        "region": "UKI"
+       },
+       {
+        "region": "UKJ"
+       },
+       {
+        "region": "UKK"
+       },
+       {
+        "region": "UKL"
+       },
+       {
+        "region": "UKN"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 4B - England, Wales and Northern Ireland"
+      },
+      "relatedLot": "8"
+     },
+     {
+      "id": "10",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18143000",
+        "description": "Protective gear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18141000",
+        "description": "Work gloves"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18440000",
+        "description": "Hats and headgear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKC"
+       },
+       {
+        "region": "UKD"
+       },
+       {
+        "region": "UKE"
+       },
+       {
+        "region": "UKF"
+       },
+       {
+        "region": "UKG"
+       },
+       {
+        "region": "UKH"
+       },
+       {
+        "region": "UKI"
+       },
+       {
+        "region": "UKJ"
+       },
+       {
+        "region": "UKK"
+       },
+       {
+        "region": "UKL"
+       },
+       {
+        "region": "UKN"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 5B - England, Wales and Northern Ireland"
+      },
+      "relatedLot": "10"
+     },
+     {
+      "id": "12",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18412000",
+        "description": "Sportswear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKC"
+       },
+       {
+        "region": "UKD"
+       },
+       {
+        "region": "UKE"
+       },
+       {
+        "region": "UKF"
+       },
+       {
+        "region": "UKG"
+       },
+       {
+        "region": "UKH"
+       },
+       {
+        "region": "UKI"
+       },
+       {
+        "region": "UKJ"
+       },
+       {
+        "region": "UKK"
+       },
+       {
+        "region": "UKL"
+       },
+       {
+        "region": "UKN"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 6B - England, Wales and Northern Ireland"
+      },
+      "relatedLot": "12"
+     },
+     {
+      "id": "15",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18000000",
+        "description": "Clothing, footwear, luggage articles and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18100000",
+        "description": "Occupational clothing, special workwear and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18400000",
+        "description": "Special clothing and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18800000",
+        "description": "Footwear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18200000",
+        "description": "Outerwear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18300000",
+        "description": "Garments"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18141000",
+        "description": "Work gloves"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18440000",
+        "description": "Hats and headgear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKC"
+       },
+       {
+        "region": "UKD"
+       },
+       {
+        "region": "UKE"
+       },
+       {
+        "region": "UKF"
+       },
+       {
+        "region": "UKG"
+       },
+       {
+        "region": "UKH"
+       },
+       {
+        "region": "UKI"
+       },
+       {
+        "region": "UKJ"
+       },
+       {
+        "region": "UKK"
+       },
+       {
+        "region": "UKL"
+       },
+       {
+        "region": "UKN"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 8B - England, Wales and Northern Ireland"
+      },
+      "relatedLot": "15"
+     },
+     {
+      "id": "3",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18100000",
+        "description": "Occupational clothing, special workwear and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18800000",
+        "description": "Footwear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18830000",
+        "description": "Protective footwear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 2A - Scotland Wide"
+      },
+      "relatedLot": "3"
+     },
+     {
+      "id": "5",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18400000",
+        "description": "Special clothing and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 3A - Scotland Wide"
+      },
+      "relatedLot": "5"
+     },
+     {
+      "id": "7",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18100000",
+        "description": "Occupational clothing, special workwear and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 4A - Scotland Wide"
+      },
+      "relatedLot": "7"
+     },
+     {
+      "id": "9",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18143000",
+        "description": "Protective gear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18141000",
+        "description": "Work gloves"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18440000",
+        "description": "Hats and headgear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 5A - Scotland Wide"
+      },
+      "relatedLot": "9"
+     },
+     {
+      "id": "11",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18412000",
+        "description": "Sportswear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 6A - Scotland Wide"
+      },
+      "relatedLot": "11"
+     },
+     {
+      "id": "13",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "39222000",
+        "description": "Catering supplies"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18100000",
+        "description": "Occupational clothing, special workwear and accessories"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 7A - Scotland Wide (Further Education Institutions Only)"
+      },
+      "relatedLot": "13"
+     },
+     {
+      "id": "14",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18000000",
+        "description": "Clothing, footwear, luggage articles and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18100000",
+        "description": "Occupational clothing, special workwear and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18400000",
+        "description": "Special clothing and accessories"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18800000",
+        "description": "Footwear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18200000",
+        "description": "Outerwear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18300000",
+        "description": "Garments"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18141000",
+        "description": "Work gloves"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18440000",
+        "description": "Hats and headgear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 8A - Scotland Wide"
+      },
+      "relatedLot": "14"
+     },
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18143000",
+        "description": "Protective gear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18141000",
+        "description": "Work gloves"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18440000",
+        "description": "Hats and headgear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 1A - Scotland Wide"
+      },
+      "relatedLot": "1"
+     },
+     {
+      "id": "2",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "18143000",
+        "description": "Protective gear"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18113000",
+        "description": "Industrial clothing"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18141000",
+        "description": "Work gloves"
+       },
+       {
+        "scheme": "CPV",
+        "id": "18440000",
+        "description": "Hats and headgear"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKC"
+       },
+       {
+        "region": "UKD"
+       },
+       {
+        "region": "UKE"
+       },
+       {
+        "region": "UKF"
+       },
+       {
+        "region": "UKG"
+       },
+       {
+        "region": "UKH"
+       },
+       {
+        "region": "UKI"
+       },
+       {
+        "region": "UKJ"
+       },
+       {
+        "region": "UKK"
+       },
+       {
+        "region": "UKN"
+       },
+       {
+        "region": "UKL"
+       }
+      ],
+      "deliveryLocation": {
+       "description": "Lot 1B - England, Wales and Northern Ireland."
+      },
+      "relatedLot": "2"
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "techniques": {
+     "hasFrameworkAgreement": true
+    },
+    "coveredBy": [
+     "GPA"
+    ]
+   },
+   "awards": [
+    {
+     "id": "110088-2026-1",
+     "relatedLots": [
+      "1"
+     ],
+     "title": "Lot 1A - General PPE (Scotland Wide)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-2",
+     "relatedLots": [
+      "2"
+     ],
+     "title": "Lot 1B- General PPE (England, Wales and Northern Ireland)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-3",
+     "relatedLots": [
+      "3"
+     ],
+     "title": "Lot 2A - General Workwear & Footwear (Scotland Wide)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-4",
+     "relatedLots": [
+      "4"
+     ],
+     "title": "Lot 2B - General Workwear & Footwear (England, Wales and Northern Ireland)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-5",
+     "relatedLots": [
+      "5"
+     ],
+     "title": "Lot 3A - Lab Coats & Dentistry (Scotland Wide)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-6",
+     "relatedLots": [
+      "6"
+     ],
+     "title": "Lot 3B - Lab Coats & Dentistry (England, Wales and Northern Ireland)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-7",
+     "relatedLots": [
+      "7"
+     ],
+     "title": "Lot 4A - Catering & Front of House (Scotland Wide)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-8",
+     "relatedLots": [
+      "8"
+     ],
+     "title": "Lot 4B - Catering & Front of House (England, Wales and Northern Ireland)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-9",
+     "relatedLots": [
+      "9"
+     ],
+     "title": "Lot 5A - Specialist PPE (Scotland Wide)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-10",
+     "relatedLots": [
+      "10"
+     ],
+     "title": "Lot 5B - Specialist PPE (England, Wales and Northern Ireland)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-11",
+     "relatedLots": [
+      "11"
+     ],
+     "title": "Lot 6A - Sports & Fitness Clothing (Scotland Wide)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-12",
+     "relatedLots": [
+      "12"
+     ],
+     "title": "Lot 6B - Sports and Fitness Clothing (England, Wales and Northern Ireland)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-13",
+     "relatedLots": [
+      "13"
+     ],
+     "title": "Lot 7A - Catering Kits",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-14",
+     "relatedLots": [
+      "14"
+     ],
+     "title": "Lot 8A - One Stop Shop (Scotland Wide)",
+     "status": "active"
+    },
+    {
+     "id": "110088-2026-15",
+     "relatedLots": [
+      "15"
+     ],
+     "title": "Lot 8B - One Stop Shop (England, Wales and Northern Ireland)",
+     "status": "active"
+    }
+   ],
+   "parties": [
+    {
+     "name": "APUC Limited",
+     "id": "GB-FTS-2420",
+     "identifier": {
+      "legalName": "APUC Limited"
+     },
+     "address": {
+      "streetAddress": "Unit 27, Stirling Business Centre, Wellgreen",
+      "locality": "Stirling",
+      "region": "UKM77",
+      "postalCode": "FK8 2DZ",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer",
+      "centralPurchasingBody"
+     ],
+     "details": {
+      "url": "http://www.apuc-scot.ac.uk",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA10402",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "description": "Education"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "09",
+        "description": "Education"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-2420",
+    "name": "APUC Limited"
+   },
+   "planning": {
+    "budget": {
+     "finance": [
+      {
+       "id": "1",
+       "description": "Purchases under this agreement may be related to Horizon Funding",
+       "financingParty": {
+        "name": "European Union",
+        "id": "GB-FTS-172"
+       },
+       "relatedLots": [
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "15",
+        "3",
+        "5",
+        "7",
+        "9",
+        "11",
+        "13",
+        "14",
+        "1",
+        "2"
+       ]
+      }
+     ]
+    }
+   },
+   "contracts": [
+    {
+     "id": "110088-2026-1",
+     "awardID": "110088-2026-1",
+     "title": "Lot 1A - General PPE (Scotland Wide)",
+     "status": "active",
+     "value": {
+      "amount": 8500000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-2",
+     "awardID": "110088-2026-2",
+     "title": "Lot 1B- General PPE (England, Wales and Northern Ireland)",
+     "status": "active",
+     "value": {
+      "amount": 17500000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-3",
+     "awardID": "110088-2026-3",
+     "title": "Lot 2A - General Workwear & Footwear (Scotland Wide)",
+     "status": "active",
+     "value": {
+      "amount": 4000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-4",
+     "awardID": "110088-2026-4",
+     "title": "Lot 2B - General Workwear & Footwear (England, Wales and Northern Ireland)",
+     "status": "active",
+     "value": {
+      "amount": 6000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-5",
+     "awardID": "110088-2026-5",
+     "title": "Lot 3A - Lab Coats & Dentistry (Scotland Wide)",
+     "status": "active",
+     "value": {
+      "amount": 1500000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-6",
+     "awardID": "110088-2026-6",
+     "title": "Lot 3B - Lab Coats & Dentistry (England, Wales and Northern Ireland)",
+     "status": "active",
+     "value": {
+      "amount": 2500000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-7",
+     "awardID": "110088-2026-7",
+     "title": "Lot 4A - Catering & Front of House (Scotland Wide)",
+     "status": "active",
+     "value": {
+      "amount": 1500000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-8",
+     "awardID": "110088-2026-8",
+     "title": "Lot 4B - Catering & Front of House (England, Wales and Northern Ireland)",
+     "status": "active",
+     "value": {
+      "amount": 2500000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-9",
+     "awardID": "110088-2026-9",
+     "title": "Lot 5A - Specialist PPE (Scotland Wide)",
+     "status": "active",
+     "value": {
+      "amount": 4000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-10",
+     "awardID": "110088-2026-10",
+     "title": "Lot 5B - Specialist PPE (England, Wales and Northern Ireland)",
+     "status": "active",
+     "value": {
+      "amount": 9000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-11",
+     "awardID": "110088-2026-11",
+     "title": "Lot 6A - Sports & Fitness Clothing (Scotland Wide)",
+     "status": "active",
+     "value": {
+      "amount": 5000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-12",
+     "awardID": "110088-2026-12",
+     "title": "Lot 6B - Sports and Fitness Clothing (England, Wales and Northern Ireland)",
+     "status": "active",
+     "value": {
+      "amount": 6000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-13",
+     "awardID": "110088-2026-13",
+     "title": "Lot 7A - Catering Kits",
+     "status": "active",
+     "value": {
+      "amount": 3000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-14",
+     "awardID": "110088-2026-14",
+     "title": "Lot 8A - One Stop Shop (Scotland Wide)",
+     "status": "active",
+     "value": {
+      "amount": 40520000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    },
+    {
+     "id": "110088-2026-15",
+     "awardID": "110088-2026-15",
+     "title": "Lot 8B - One Stop Shop (England, Wales and Northern Ireland)",
+     "status": "active",
+     "value": {
+      "amount": 60000000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2025-08-06T00:00:00+01:00"
+    }
+   ],
+   "bids": {
+    "statistics": [
+     {
+      "id": "1",
+      "measure": "bids",
+      "relatedLot": "1",
+      "value": 11
+     },
+     {
+      "id": "6",
+      "measure": "bids",
+      "relatedLot": "2",
+      "value": 9
+     },
+     {
+      "id": "11",
+      "measure": "bids",
+      "relatedLot": "3",
+      "value": 13
+     },
+     {
+      "id": "16",
+      "measure": "bids",
+      "relatedLot": "4",
+      "value": 11
+     },
+     {
+      "id": "21",
+      "measure": "bids",
+      "relatedLot": "5",
+      "value": 9
+     },
+     {
+      "id": "26",
+      "measure": "bids",
+      "relatedLot": "6",
+      "value": 10
+     },
+     {
+      "id": "31",
+      "measure": "bids",
+      "relatedLot": "7",
+      "value": 8
+     },
+     {
+      "id": "36",
+      "measure": "bids",
+      "relatedLot": "8",
+      "value": 7
+     },
+     {
+      "id": "41",
+      "measure": "bids",
+      "relatedLot": "9",
+      "value": 10
+     },
+     {
+      "id": "46",
+      "measure": "bids",
+      "relatedLot": "10",
+      "value": 8
+     },
+     {
+      "id": "51",
+      "measure": "bids",
+      "relatedLot": "11",
+      "value": 2
+     },
+     {
+      "id": "56",
+      "measure": "bids",
+      "relatedLot": "12",
+      "value": 3
+     },
+     {
+      "id": "61",
+      "measure": "bids",
+      "relatedLot": "13",
+      "value": 2
+     },
+     {
+      "id": "66",
+      "measure": "bids",
+      "relatedLot": "14",
+      "value": 9
+     },
+     {
+      "id": "71",
+      "measure": "bids",
+      "relatedLot": "15",
+      "value": 7
+     },
+     {
+      "id": "2",
+      "measure": "smeBids",
+      "relatedLot": "1",
+      "value": 9
+     },
+     {
+      "id": "7",
+      "measure": "smeBids",
+      "relatedLot": "2",
+      "value": 7
+     },
+     {
+      "id": "12",
+      "measure": "smeBids",
+      "relatedLot": "3",
+      "value": 11
+     },
+     {
+      "id": "17",
+      "measure": "smeBids",
+      "relatedLot": "4",
+      "value": 9
+     },
+     {
+      "id": "22",
+      "measure": "smeBids",
+      "relatedLot": "5",
+      "value": 7
+     },
+     {
+      "id": "27",
+      "measure": "smeBids",
+      "relatedLot": "6",
+      "value": 8
+     },
+     {
+      "id": "32",
+      "measure": "smeBids",
+      "relatedLot": "7",
+      "value": 7
+     },
+     {
+      "id": "37",
+      "measure": "smeBids",
+      "relatedLot": "8",
+      "value": 6
+     },
+     {
+      "id": "42",
+      "measure": "smeBids",
+      "relatedLot": "9",
+      "value": 8
+     },
+     {
+      "id": "47",
+      "measure": "smeBids",
+      "relatedLot": "10",
+      "value": 6
+     },
+     {
+      "id": "52",
+      "measure": "smeBids",
+      "relatedLot": "11",
+      "value": 2
+     },
+     {
+      "id": "57",
+      "measure": "smeBids",
+      "relatedLot": "12",
+      "value": 3
+     },
+     {
+      "id": "62",
+      "measure": "smeBids",
+      "relatedLot": "13",
+      "value": 2
+     },
+     {
+      "id": "67",
+      "measure": "smeBids",
+      "relatedLot": "14",
+      "value": 7
+     },
+     {
+      "id": "72",
+      "measure": "smeBids",
+      "relatedLot": "15",
+      "value": 5
+     },
+     {
+      "id": "3",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "1",
+      "value": 0
+     },
+     {
+      "id": "8",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "2",
+      "value": 0
+     },
+     {
+      "id": "13",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "3",
+      "value": 0
+     },
+     {
+      "id": "18",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "4",
+      "value": 0
+     },
+     {
+      "id": "23",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "5",
+      "value": 0
+     },
+     {
+      "id": "28",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "6",
+      "value": 0
+     },
+     {
+      "id": "33",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "7",
+      "value": 0
+     },
+     {
+      "id": "38",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "8",
+      "value": 0
+     },
+     {
+      "id": "43",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "9",
+      "value": 0
+     },
+     {
+      "id": "48",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "10",
+      "value": 0
+     },
+     {
+      "id": "53",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "11",
+      "value": 0
+     },
+     {
+      "id": "58",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "12",
+      "value": 0
+     },
+     {
+      "id": "63",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "13",
+      "value": 0
+     },
+     {
+      "id": "68",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "14",
+      "value": 0
+     },
+     {
+      "id": "73",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "15",
+      "value": 0
+     },
+     {
+      "id": "4",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "1",
+      "value": 9
+     },
+     {
+      "id": "9",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "2",
+      "value": 9
+     },
+     {
+      "id": "14",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "3",
+      "value": 13
+     },
+     {
+      "id": "19",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "4",
+      "value": 11
+     },
+     {
+      "id": "24",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "5",
+      "value": 9
+     },
+     {
+      "id": "29",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "6",
+      "value": 10
+     },
+     {
+      "id": "34",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "7",
+      "value": 8
+     },
+     {
+      "id": "39",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "8",
+      "value": 7
+     },
+     {
+      "id": "44",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "9",
+      "value": 10
+     },
+     {
+      "id": "49",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "10",
+      "value": 8
+     },
+     {
+      "id": "54",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "11",
+      "value": 2
+     },
+     {
+      "id": "59",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "12",
+      "value": 0
+     },
+     {
+      "id": "64",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "13",
+      "value": 2
+     },
+     {
+      "id": "69",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "14",
+      "value": 9
+     },
+     {
+      "id": "74",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "15",
+      "value": 7
+     },
+     {
+      "id": "5",
+      "measure": "electronicBids",
+      "relatedLot": "1",
+      "value": 9
+     },
+     {
+      "id": "10",
+      "measure": "electronicBids",
+      "relatedLot": "2",
+      "value": 9
+     },
+     {
+      "id": "15",
+      "measure": "electronicBids",
+      "relatedLot": "3",
+      "value": 13
+     },
+     {
+      "id": "20",
+      "measure": "electronicBids",
+      "relatedLot": "4",
+      "value": 11
+     },
+     {
+      "id": "25",
+      "measure": "electronicBids",
+      "relatedLot": "5",
+      "value": 9
+     },
+     {
+      "id": "30",
+      "measure": "electronicBids",
+      "relatedLot": "6",
+      "value": 10
+     },
+     {
+      "id": "35",
+      "measure": "electronicBids",
+      "relatedLot": "7",
+      "value": 8
+     },
+     {
+      "id": "40",
+      "measure": "electronicBids",
+      "relatedLot": "8",
+      "value": 7
+     },
+     {
+      "id": "45",
+      "measure": "electronicBids",
+      "relatedLot": "9",
+      "value": 10
+     },
+     {
+      "id": "50",
+      "measure": "electronicBids",
+      "relatedLot": "10",
+      "value": 8
+     },
+     {
+      "id": "55",
+      "measure": "electronicBids",
+      "relatedLot": "11",
+      "value": 2
+     },
+     {
+      "id": "60",
+      "measure": "electronicBids",
+      "relatedLot": "12",
+      "value": 3
+     },
+     {
+      "id": "65",
+      "measure": "electronicBids",
+      "relatedLot": "13",
+      "value": 2
+     },
+     {
+      "id": "70",
+      "measure": "electronicBids",
+      "relatedLot": "14",
+      "value": 9
+     },
+     {
+      "id": "75",
+      "measure": "electronicBids",
+      "relatedLot": "15",
+      "value": 7
+     }
+    ]
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000794673"
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-07c036",
+   "id": "110086-2026",
+   "date": "2026-11-20T11:43:44Z",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "description": "An Invitation to tender was issued under Category 4 - Purchase, Repair, Maintenance and Parts for Heavy Plant Equipment from the council’s Dynamic Purchasing System (DPS) for the Purchase, Maintenance and Repair of Heavy Vehicles and Plant, reference GCC003831CPU.\nContract notice number OCT298232\nhttps://www.publiccontractsscotland.gov.uk/Search/show/Search_View.aspx?ID=OCT298232\n(SC Ref:845711)",
+   "initiationType": "tender",
+   "tender": {
+    "id": "- GCC006622CPU",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "Purchase, Maintenance & Repair of High Lift Waste Loading Shovels Tender Reference:",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "43260000",
+     "description": "Mechanical shovels, excavators and shovel loaders, and mining machinery"
+    },
+    "mainProcurementCategory": "goods",
+    "description": "The purchase, maintenance & repair of high waste loading shovels.",
+    "lots": [
+     {
+      "id": "1",
+      "description": "This procurement relates to the purchase, maintenance and repair of the following two types of heavy plant formed part of the tender scope:\nQty of 8 x High Lift Waste Loading Shovel (Direct Hitch)\nQty of 1 x High Lift Waste Loading Shovel (Quick Hitch)",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Quality",
+         "type": "quality",
+         "description": "40"
+        },
+        {
+         "type": "price",
+         "description": "60"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "43250000",
+        "description": "Front-end shovel loaders"
+       },
+       {
+        "scheme": "CPV",
+        "id": "43251000",
+        "description": "Front-end shovel loaders with backhoe"
+       },
+       {
+        "scheme": "CPV",
+        "id": "43252000",
+        "description": "Front-end shovel loaders without backhoe"
+       },
+       {
+        "scheme": "CPV",
+        "id": "43260000",
+        "description": "Mechanical shovels, excavators and shovel loaders, and mining machinery"
+       },
+       {
+        "scheme": "CPV",
+        "id": "43261000",
+        "description": "Mechanical shovels"
+       },
+       {
+        "scheme": "CPV",
+        "id": "43261100",
+        "description": "Mechanical shovel loaders"
+       },
+       {
+        "scheme": "CPV",
+        "id": "42420000",
+        "description": "Buckets, shovels, grabs and grips for cranes or excavators"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM82"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Restricted procedure",
+    "coveredBy": [
+     "GPA"
+    ],
+    "reviewDetails": "Precise information on deadline(s) for review procedures:\nGlasgow City council (\"the council\") must, by notice in writing as soon as possible after the decision has been made, inform all tenderers\nand candidates concerned of its decision to award the contract, conclude the framework agreement or establish a dynamic purchasing\nsystem. The Council must allow a period of at least the relevant standstill period (where the notice is sent by facsimile or electronic means\nthe period is 10 days ending at midnight at the end of the 10th day after that on which the last notice is sent. When sent by other means the\nperiod is 15 days) to elapse between the date of despatch of the notice referred to in Regulation 85(1) of the Public Contracts (Scotland)\nRegulations 2015 (\"The Regulations\"). The Council is obliged to comply with the regulations and any eligible economic operator can bring\nan action in the Sherriff Court of the Court of Session where a consequence of a breach by the Council, suffers or risks suffering loss or\ndamage.\nThe bringing of court proceedings during the standstill period means that the council must not enter into the contract, conclude the\nframework agreement or establish the dynamic purchasing system unless the proceedings are determined, discontinued or disposed of: or\nthe court, by interim order, brings to an end the prohibition. The bringing of court proceedings after the standstill period has elapsed and the\nremedies that are available to the courts are detailed in the Regulations.\nEconomic operators can write to the Council seeking further information"
+   },
+   "awards": [
+    {
+     "id": "110086-2026-GCC006622CPU-1",
+     "relatedLots": [
+      "1"
+     ],
+     "status": "active"
+    }
+   ],
+   "parties": [
+    {
+     "name": "Glasgow City Council",
+     "id": "GB-FTS-73933",
+     "identifier": {
+      "legalName": "Glasgow City Council"
+     },
+     "address": {
+      "streetAddress": "40 John St, City Chambers",
+      "locality": "Glasgow",
+      "region": "UKM82",
+      "postalCode": "G2 1DU",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer",
+      "centralPurchasingBody"
+     ],
+     "details": {
+      "url": "http://www.glasgow.gov.uk",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA00196",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "REGIONAL_AUTHORITY",
+        "description": "Regional or local authority"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "01",
+        "description": "General public services"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-73933",
+    "name": "Glasgow City Council"
+   },
+   "contracts": [
+    {
+     "id": "110086-2026-GCC006622CPU-1",
+     "awardID": "110086-2026-GCC006622CPU-1",
+     "status": "active",
+     "value": {
+      "amount": 3276775,
+      "currency": "GBP"
+     },
+     "dateSigned": "2026-11-17T00:00:00Z"
+    }
+   ],
+   "bids": {
+    "statistics": [
+     {
+      "id": "1",
+      "measure": "bids",
+      "relatedLot": "1",
+      "value": 4
+     },
+     {
+      "id": "2",
+      "measure": "smeBids",
+      "relatedLot": "1",
+      "value": 0
+     },
+     {
+      "id": "3",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "1",
+      "value": 0
+     },
+     {
+      "id": "4",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "1",
+      "value": 4
+     },
+     {
+      "id": "5",
+      "measure": "electronicBids",
+      "relatedLot": "1",
+      "value": 4
+     }
+    ]
+   },
+   "links": [
+    {
+     "rel": "prev",
+     "href": "https://ted.europa.eu/udl?uri=TED:NOTICE:298931-2017:TEXT:EN:HTML"
+    },
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000845711"
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-068c91",
+   "id": "110084-2026",
+   "date": "2026-11-20T11:42:08Z",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "description": "(SC Ref:848920)",
+   "initiationType": "tender",
+   "tender": {
+    "id": "ocds-h6vhtk-068c91",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "FMPG-2026-019 Occupational Health",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "85100000",
+     "description": "Health services"
+    },
+    "mainProcurementCategory": "services",
+    "description": "Ferguson Marine (Port Glasgow) Ltd. seeks to award a Contract for the provision of Occupational Health Services.",
+    "lots": [
+     {
+      "id": "1",
+      "description": "Ferguson Marine is undergoing significant transformation, with a focus on workforce resilience, compliance, and wellbeing. Occupational Health is a critical enabler of this strategy, supporting both operational performance and duty of care obligations.",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Technical Capabilites",
+         "type": "quality",
+         "description": "70"
+        },
+        {
+         "type": "price",
+         "description": "30"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "85100000",
+        "description": "Health services"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKM83"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "coveredBy": [
+     "GPA"
+    ]
+   },
+   "awards": [
+    {
+     "id": "110084-2026-FMPG-2026-019-1",
+     "relatedLots": [
+      "1"
+     ],
+     "status": "active"
+    }
+   ],
+   "parties": [
+    {
+     "name": "Ferguson Marine (Port Glasgow) Ltd",
+     "id": "GB-FTS-20365",
+     "identifier": {
+      "legalName": "Ferguson Marine (Port Glasgow) Ltd"
+     },
+     "address": {
+      "streetAddress": "Newark Works Castle Road, Castle Road",
+      "locality": "Port Glasgow",
+      "region": "UKM83",
+      "postalCode": "PA14 5NG",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "buyer",
+      "centralPurchasingBody"
+     ],
+     "details": {
+      "url": "http://www.fergusonmarine.com",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA30427",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "BODY_PUBLIC",
+        "description": "Body governed by public law"
+       },
+       {
+        "scheme": "COFOG",
+        "description": "Shipbuilding"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-20365",
+    "name": "Ferguson Marine (Port Glasgow) Ltd"
+   },
+   "contracts": [
+    {
+     "id": "110084-2026-FMPG-2026-019-1",
+     "awardID": "110084-2026-FMPG-2026-019-1",
+     "status": "active",
+     "value": {
+      "amount": 250000,
+      "currency": "GBP"
+     },
+     "dateSigned": "2026-11-19T00:00:00Z"
+    }
+   ],
+   "bids": {
+    "statistics": [
+     {
+      "id": "1",
+      "measure": "bids",
+      "relatedLot": "1",
+      "value": 6
+     },
+     {
+      "id": "2",
+      "measure": "smeBids",
+      "relatedLot": "1",
+      "value": 6
+     },
+     {
+      "id": "3",
+      "measure": "foreignBidsFromEU",
+      "relatedLot": "1",
+      "value": 0
+     },
+     {
+      "id": "4",
+      "measure": "foreignBidsFromNonEU",
+      "relatedLot": "1",
+      "value": 6
+     },
+     {
+      "id": "5",
+      "measure": "electronicBids",
+      "relatedLot": "1",
+      "value": 6
+     }
+    ]
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000828967"
+    }
+   ],
+   "language": "en"
+  }
+ ],
+ "links": {
+  "next": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-11-20T00:00:00&updatedTo=2026-11-20T12:00:00&limit=5&stages=award&cursor=dXBkYXRlZEZyb209MjAyNi0xMS0yMFQwMDowMDowMHx1cGRhdGVkVG89MjAyNi0xMS0yMFQxMjowMDowMHxuZXh0Q3Vyc29yPTc2MjA1Mw=="
+ }
+}
