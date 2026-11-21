@@ -100,6 +100,7 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
         let scanned = 0;
         let pages = 0;
         let truncated = false;
+        let chargeLimitReached = false;
         const visited = new Set();
         while (url && pushed < maxItems) {
             if (pages >= MAX_PAGES) { truncated = true; log.warning(`Stopped after ${MAX_PAGES} pages; results are incomplete — narrow the date window.`); break; }
@@ -108,11 +109,13 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
             const pkg = await get(url);
             pages++;
             const out = [];
+            const pageKeys = new Set();
             for (const r of pkg.releases) {
                 scanned++;
                 const rec = normalizeRelease(r);
-                if (seen.has(keyOf(rec)) || !matches(rec, filters)) continue;
-                seen.set(keyOf(rec), rec.releaseDate ?? now().toISOString()); // also de-duplicates within the run
+                const key = keyOf(rec);
+                if (seen.has(key) || pageKeys.has(key) || !matches(rec, filters)) continue;
+                pageKeys.add(key);
                 out.push(rec);
                 if (pushed + out.length >= maxItems) {
                     // stopping inside this page: anything after this release is not processed
@@ -121,18 +124,26 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
                 }
             }
             if (out.length) {
-                await actor.pushData(out);
-                pushed += out.length;
+                const result = await actor.pushData(out);
+                chargeLimitReached = result?.eventChargeLimitReached === true;
+                const saved = chargeLimitReached ? out.slice(0, result.chargedCount) : out;
+                pushed += saved.length;
+                for (const rec of saved) seen.set(keyOf(rec), rec.releaseDate ?? now().toISOString());
                 if (onlyNew) {
                     for (const [k, d] of seen) if (d < pruneBefore) seen.delete(k);
                     await store.setValue(`seen-${stateKey}`, Object.fromEntries(seen));
+                }
+                if (chargeLimitReached) {
+                    truncated ||= saved.length < out.length || Boolean(pkg.links?.next);
+                    log.warning('Pay-per-event charge limit reached. Stopping dataset output.');
+                    break;
                 }
             }
             if (pushed >= maxItems && nextPageUrl(pkg)) truncated = true;
             url = nextPageUrl(pkg);
         }
         await actor.setValue('RUN_SUMMARY', { firstPage: url0, pages, scanned, pushed, incomplete: truncated });
-        if (pushed === 0) log.info(onlyNew ? 'No new notices since the last run.' : 'No notices matched.');
+        if (pushed === 0 && !chargeLimitReached) log.info(onlyNew ? 'No new notices since the last run.' : 'No notices matched.');
         log.info(`Done. Scanned ${scanned} notices, pushed ${pushed}.`);
         await actor.exit();
     } catch (err) {

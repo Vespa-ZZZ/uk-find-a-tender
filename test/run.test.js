@@ -7,25 +7,32 @@ const tender = JSON.parse(readFileSync(new URL('./fixtures/tender-page.json', im
 const NOW = () => new Date('2026-11-21T00:00:00Z');
 const API = 'https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages';
 
-async function exec(input, respond, state = new Map()) {
+async function exec(input, respond, state = new Map(), chargeResult) {
     const records = [];
     const lifecycle = [];
     const urls = [];
+    const warnings = [];
+    const values = new Map();
+    let pushes = 0;
     const actor = {
         async init() {},
         async getInput() { return input; },
         async openKeyValueStore() {
             return { getValue: async (k) => structuredClone(state.get(k) ?? null), setValue: async (k, v) => { state.set(k, structuredClone(v)); } };
         },
-        async pushData(r) { records.push(...r); },
-        async setValue() {},
+        async pushData(rows) {
+            pushes++;
+            records.push(...(chargeResult?.eventChargeLimitReached ? rows.slice(0, chargeResult.chargedCount) : rows));
+            return chargeResult;
+        },
+        async setValue(k, v) { values.set(k, v); },
         async exit() { lifecycle.push('exit'); },
         async fail(m) { lifecycle.push('fail', m); },
     };
-    const log = { info() {}, warning() {}, error() {} };
+    const log = { info() {}, warning(m) { warnings.push(m); }, error() {} };
     const fetchImpl = async (url) => { urls.push(url); return respond(url, urls.length); };
     await run({ actor, log, fetchImpl, sleep: async () => {}, now: NOW });
-    return { records, lifecycle, urls };
+    return { records, lifecycle, urls, warnings, pushes, summary: values.get('RUN_SUMMARY') };
 }
 const ok = (o) => new Response(JSON.stringify(o));
 const single = () => ok({ ...tender, links: {} });
@@ -45,6 +52,25 @@ test('monitoring mode reports each notice version once', async () => {
     const b = await exec({ onlyNew: true }, single, state);
     assert.equal(a.records.length, tender.releases.length);
     assert.equal(b.records.length, 0);
+});
+
+test('a charge-limited page saves seen keys only for notices written to the dataset', async () => {
+    const input = { onlyNew: true };
+    const state = new Map();
+    const first = await exec(input, () => ok({ ...tender, links: { next: `${API}?cursor=more` } }), state,
+        { eventChargeLimitReached: true, chargedCount: 1 });
+    assert.deepEqual(first.lifecycle, ['exit']);
+    assert.equal(first.urls.length, 1);
+    assert.equal(first.pushes, 1);
+    assert.equal(first.summary.pushed, 1);
+    assert.equal(first.summary.incomplete, true);
+    assert.match(first.warnings[0], /charge limit reached/i);
+    const [saved] = first.records;
+    assert.deepEqual(Object.keys(state.get('seen-default')), [`${saved.noticeId}@${saved.releaseDate}`]);
+
+    const next = await exec(input, single, state, { eventChargeLimitReached: false, chargedCount: 0 });
+    assert.equal(next.summary.pushed, tender.releases.length - 1);
+    assert.ok(next.records.every((r) => r.noticeId !== saved.noticeId || r.releaseDate !== saved.releaseDate));
 });
 
 test('filters, maxItems and input validation', async () => {

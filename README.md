@@ -63,6 +63,8 @@ Daily monitoring of construction tenders in Scotland (schedule once a day):
 
 The Actor reads the official Find a Tender OCDS release-package API page by page (100 notices per request) for the chosen date window and stages, with a pause between requests and retries on temporary errors. Keyword/CPV/region/value/deadline filters are applied to each notice. In monitoring mode each notice **version** (amendments are republished) is reported once. Do not run two schedules with the same `stateKey` simultaneously. A run stopped by `maxItems` or the page limit (2,000 pages = 200,000 notices) is marked `incomplete` in the `RUN_SUMMARY` record. Notices skipped because of `maxItems` are returned by the next monitoring run while they are still inside the date window; if the page limit is reached, rerunning the same window does not help — split it into shorter windows. API documentation: [Find a Tender API](https://www.find-tender.service.gov.uk/apidocumentation), [terms](https://www.find-tender.service.gov.uk/Home/TermsAndConditions).
 
+When the pay-per-event spending limit is reached, the run stops with a warning. Remaining notices stay eligible for the next monitoring run while they still match the search. The run summary is marked `incomplete` if notices or pages were left unread or unwritten.
+
 ## Data source & licence
 
 Contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) — source: Find a Tender Service, UK Government. When you republish the data, include this attribution. This Actor is not affiliated with or endorsed by the UK Government.
