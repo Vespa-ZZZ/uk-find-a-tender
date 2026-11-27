@@ -7,7 +7,7 @@ const tender = JSON.parse(readFileSync(new URL('./fixtures/tender-page.json', im
 const NOW = () => new Date('2026-11-21T00:00:00Z');
 const API = 'https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages';
 
-async function exec(input, respond, state = new Map(), chargeResult) {
+async function exec(input, respond, state = new Map(), chargeResult, configureActor) {
     const records = [];
     const lifecycle = [];
     const urls = [];
@@ -31,6 +31,7 @@ async function exec(input, respond, state = new Map(), chargeResult) {
     };
     const log = { info() {}, warning(m) { warnings.push(m); }, error() {} };
     const fetchImpl = async (url) => { urls.push(url); return respond(url, urls.length); };
+    configureActor?.(actor, records);
     await run({ actor, log, fetchImpl, sleep: async () => {}, now: NOW });
     return { records, lifecycle, urls, warnings, pushes, summary: values.get('RUN_SUMMARY') };
 }
@@ -117,4 +118,24 @@ test('stopping inside the last page is reported as incomplete', async () => {
     assert.equal(records.length, 1);
     assert.equal(values.get('RUN_SUMMARY').incomplete, true);
     assert.equal(values.get('RUN_SUMMARY').pages, 1);
+});
+
+test('prechecks the dataset item budget and allows non-PPE output', async () => {
+    for (const [isPayPerEvent, budget] of [[true, 1], [true, 0], [false, 0]]) {
+        const configureActor = (actor, records) => {
+            actor.getChargingManager = () => ({
+                getPricingInfo: () => ({ isPayPerEvent }),
+                calculateMaxEventChargeCountWithinLimit(event) {
+                    assert.equal(event, 'apify-default-dataset-item');
+                    return budget - records.length;
+                },
+            });
+        };
+        const result = await exec({ onlyNew: true }, single, new Map(), undefined, configureActor);
+        assert.deepEqual(result.lifecycle, ['exit']);
+        assert.equal(result.records.length, isPayPerEvent ? budget : tender.releases.length);
+        assert.equal(result.summary.pushed, result.records.length);
+        assert.equal(result.summary.stopReason, isPayPerEvent ? 'spendingLimit' : undefined);
+        assert.equal(result.pushes, result.records.length ? 1 : 0);
+    }
 });

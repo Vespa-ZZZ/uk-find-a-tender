@@ -1,4 +1,5 @@
 import { setTimeout as delay } from 'node:timers/promises';
+import { pushDataWithinLimit } from './charging.js';
 import {
     InputError, firstPageUrl, matches, nextPageUrl, normalizeRelease, sanitize, validateStages,
 } from './fts.js';
@@ -124,7 +125,7 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
                 }
             }
             if (out.length) {
-                const result = await actor.pushData(out);
+                const result = await pushDataWithinLimit(actor, out);
                 chargeLimitReached = result?.eventChargeLimitReached === true;
                 const saved = chargeLimitReached ? out.slice(0, result.chargedCount) : out;
                 pushed += saved.length;
@@ -142,7 +143,10 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
             if (pushed >= maxItems && nextPageUrl(pkg)) truncated = true;
             url = nextPageUrl(pkg);
         }
-        await actor.setValue('RUN_SUMMARY', { firstPage: url0, pages, scanned, pushed, incomplete: truncated });
+        await actor.setValue('RUN_SUMMARY', {
+            firstPage: url0, pages, scanned, pushed, incomplete: truncated,
+            ...(chargeLimitReached && { stopReason: 'spendingLimit' }),
+        });
         if (pushed === 0 && !chargeLimitReached) log.info(onlyNew ? 'No new notices since the last run.' : 'No notices matched.');
         log.info(`Done. Scanned ${scanned} notices, pushed ${pushed}.`);
         await actor.exit();
